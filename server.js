@@ -21,9 +21,17 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-app.get('/', (req, res) => {
+app.get('/api/login', (req, res) => {
   res.send('Hello, my Express app is working! Am waiting for Grading!'
   );
 });
+
+app.post('/api/login', (req, res) => {
+  res.send('Hello, my Express app is working! Am waiting for Grading!'
+  );
+});
+
+
+
 
 
